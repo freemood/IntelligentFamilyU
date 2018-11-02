@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/back_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dime_120dp"
+            android:background="@mipmap/bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dime_16dp"
+            android:layout_marginStart="@dimen/dime_16dp"
+            android:layout_marginTop="@dimen/dime_32dp"
+
+            android:background="@drawable/banner_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dime_32dp"
+                android:text="@string/home_add_gateway_2_3"
+                android:textColor="@color/home_black"
+                android:textSize="@dimen/dime_35sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dime_32dp"
+                android:src="@mipmap/gateway_big" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:text="@string/home_add_gateway_two_title"
+                android:textColor="@color/home_grgray_2"
+                android:textSize="@dimen/dime_13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dime_32dp"
+                android:layout_marginStart="@dimen/dime_32dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@drawable/setting_shape">
+
+                <TextView
+                    android:id="@+id/wifi_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/wifi"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_16sp" />
+
+                <EditText
+                    android:id="@+id/wifi_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dime_16dp"
+                    android:layout_toEndOf="@+id/wifi_iv"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dime_8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/home_grgray_1"
+                    android:textSize="@dimen/dime_16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginStart="@dimen/dime_16dp"
+                    android:text="@string/home_replace"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dime_32dp"
+                android:layout_marginStart="@dimen/dime_32dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@drawable/setting_shape">
+
+                <TextView
+                    android:id="@+id/wifi_pas_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/password"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_16sp" />
+
+
+                <EditText
+                    android:id="@+id/wifi_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dime_16dp"
+                    android:layout_toEndOf="@+id/wifi_pas_iv"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dime_8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/home_grgray_1"
+                    android:textSize="@dimen/dime_16sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/add_gateway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dime_16dp"
+        android:layout_marginLeft="@dimen/dime_16dp"
+        android:layout_marginRight="@dimen/dime_16dp"
+        android:layout_marginTop="@dimen/dime_16dp"
+        android:background="@drawable/btn_shape"
+        android:minWidth="@dimen/dime_240dp"
+
+        android:text="@string/home_add_gateway_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dime_16sp" />
+
+</LinearLayout>

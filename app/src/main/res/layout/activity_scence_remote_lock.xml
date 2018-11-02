@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_title_text" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dime_120dp"
+            android:background="@mipmap/bg" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dime_60dp"
+                android:gravity="center">
+
+
+                <!--验证码输入栏-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/tv_code1"
+                        style="@style/code_text_style" />
+
+                    <ImageView style="@style/vertical_line_style" />
+
+                    <TextView
+                        android:id="@+id/tv_code2"
+                        style="@style/code_text_style" />
+
+                    <ImageView style="@style/vertical_line_style" />
+
+                    <TextView
+                        android:id="@+id/tv_code3"
+                        style="@style/code_text_style" />
+
+                    <ImageView style="@style/vertical_line_style" />
+
+                    <TextView
+                        android:id="@+id/tv_code4"
+                        style="@style/code_text_style" />
+
+                    <ImageView style="@style/vertical_line_style" />
+
+                    <TextView
+                        android:id="@+id/tv_code5"
+                        style="@style/code_text_style" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_alias"
+        android:layout_width="@dimen/dime_20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:inputType="number"
+        android:maxLength="5"
+        android:visibility="visible" />
+
+</LinearLayout>

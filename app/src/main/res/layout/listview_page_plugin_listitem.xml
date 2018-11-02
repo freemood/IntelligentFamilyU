@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dime_16dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/my_application_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_drawer_my_application"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dime_16sp" />
+
+        <TextView
+            android:id="@+id/is_starting_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dime_16dp"
+            android:text="@string/home_drawer_not_starting"
+            android:textColor="@color/home_grgray_2"
+            android:textSize="@dimen/dime_13sp" />
+
+
+        <com.Intelligent.FamilyU.view.SwitchView
+            android:id="@+id/switch_view"
+            android:layout_width="@dimen/dime_32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+

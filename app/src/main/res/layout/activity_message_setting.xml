@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_sence_3"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dime_120dp"
+            android:background="@mipmap/bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/app_login_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dime_16dp"
+                android:layout_marginStart="@dimen/dime_16dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@drawable/banner_shape">
+
+                <TextView
+                    android:id="@+id/app_login_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:text="@string/home_message_setting_applogin_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dime_16sp" />
+
+
+                <com.Intelligent.FamilyU.view.SwitchView
+                    android:id="@+id/switch_app_login"
+                    android:layout_width="@dimen/dime_32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dime_32dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dime_16dp"
+                android:layout_marginStart="@dimen/dime_16dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@drawable/banner_shape"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginStart="@dimen/dime_16dp"
+                    android:layout_marginTop="@dimen/dime_16dp">
+
+                    <TextView
+                        android:id="@+id/threshold_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:text="@string/home_monitoring_setting_threshold"
+                        android:textColor="@color/home_black"
+                        android:textSize="@dimen/dime_16sp" />
+
+                    <TextView
+                        android:id="@+id/threshold_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/threshold_title"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:text="@string/home_setting_device"
+                        android:textColor="@color/home_grgray_2"
+                        android:textSize="@dimen/dime_13sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dime_16dp"
+                        android:layout_height="@dimen/dime_16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dime_16dp"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:src="@mipmap/arrow_right_normal" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dime_0_5dp"
+                    android:layout_below="@+id/ll"
+                    android:layout_marginEnd="@dimen/dime_32dp"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:background="@color/home_line_1" />
+
+                <RelativeLayout
+                    android:id="@+id/telphone_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/message_rl"
+                    android:layout_marginBottom="@dimen/dime_16dp">
+
+                    <TextView
+                        android:id="@+id/telphone_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/dime_16dp"
+                        android:layout_marginStart="@dimen/dime_32dp"
+                        android:text="@string/home_telphone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dime_16sp" />
+
+
+                    <com.Intelligent.FamilyU.view.SwitchView
+                        android:id="@+id/switch_telphone"
+                        android:layout_width="@dimen/dime_32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dime_32dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/message_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line"
+                    android:layout_marginTop="@dimen/dime_16dp">
+
+                    <TextView
+                        android:id="@+id/message_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dime_32dp"
+                        android:text="@string/home_message_shore"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dime_16sp" />
+
+
+                    <com.Intelligent.FamilyU.view.SwitchView
+                        android:id="@+id/switch_message"
+                        android:layout_width="@dimen/dime_32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dime_32dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dime_16dp"
+                android:layout_marginStart="@dimen/dime_16dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@drawable/banner_shape"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/fault_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginStart="@dimen/dime_16dp"
+                    android:layout_marginTop="@dimen/dime_16dp">
+
+                    <TextView
+                        android:id="@+id/fault_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:text="@string/home_device_fault"
+                        android:textColor="@color/home_black"
+                        android:textSize="@dimen/dime_16sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/fault_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dime_0_5dp"
+                    android:layout_below="@+id/fault_ll"
+                    android:layout_marginEnd="@dimen/dime_32dp"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:background="@color/home_line_2" />
+
+                <RelativeLayout
+                    android:id="@+id/fault_phone_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fault_line">
+
+                    <TextView
+                        android:id="@+id/fault_phone_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dime_32dp"
+                        android:text="@string/home_telphone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dime_16sp" />
+
+
+                    <com.Intelligent.FamilyU.view.SwitchView
+                        android:id="@+id/switch_phone_fault"
+                        android:layout_width="@dimen/dime_32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dime_32dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fault_message_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fault_phone_rl"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_marginTop="@dimen/dime_8dp">
+
+                    <TextView
+                        android:id="@+id/fault_message_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dime_32dp"
+                        android:text="@string/home_message_shore"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dime_16sp" />
+
+
+                    <com.Intelligent.FamilyU.view.SwitchView
+                        android:id="@+id/fault_switch_message"
+                        android:layout_width="@dimen/dime_32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dime_32dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dime_16dp"
+                android:layout_marginStart="@dimen/dime_16dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@drawable/banner_shape"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/voice_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dime_16dp">
+
+                    <TextView
+                        android:id="@+id/voice_telphone_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/dime_16dp"
+                        android:layout_marginStart="@dimen/dime_32dp"
+                        android:text="@string/home_message_voice"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dime_16sp" />
+
+
+                    <com.Intelligent.FamilyU.view.SwitchView
+                        android:id="@+id/voice_switch_telphone"
+                        android:layout_width="@dimen/dime_32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dime_32dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/shock_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/voice_rl"
+                    android:layout_marginBottom="@dimen/dime_16dp">
+
+                    <TextView
+                        android:id="@+id/shock__name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/dime_16dp"
+                        android:layout_marginStart="@dimen/dime_32dp"
+                        android:text="@string/home_message_shock"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dime_16sp" />
+
+
+                    <com.Intelligent.FamilyU.view.SwitchView
+                        android:id="@+id/switch_shock"
+                        android:layout_width="@dimen/dime_32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dime_32dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

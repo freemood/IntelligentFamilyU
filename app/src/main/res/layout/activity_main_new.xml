@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_title" />
+
+    <com.Intelligent.FamilyU.view.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/mainview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/main_page"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/home_main_page_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dime_8dp"
+                android:background="@mipmap/home_main_page_on" />
+
+            <TextView
+                android:id="@+id/home_main_page_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_main_page_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dime_8dp"
+                android:layout_marginTop="@dimen/dime_2dp"
+                android:text="@string/home_main_page" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_scene"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/home_scene_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dime_8dp"
+                android:background="@mipmap/home_scene_off" />
+
+            <TextView
+                android:id="@+id/home_scene_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_scene_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dime_8dp"
+                android:layout_marginTop="@dimen/dime_2dp"
+                android:text="@string/home_scene" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_shopping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/home_shopping_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dime_8dp"
+                android:background="@mipmap/home_shopping_off" />
+
+            <TextView
+                android:id="@+id/home_shopping_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_shopping_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dime_8dp"
+                android:layout_marginTop="@dimen/dime_2dp"
+                android:text="@string/home_shopping" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/home_my_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dime_8dp"
+                android:background="@mipmap/home_main_page_on" />
+
+            <TextView
+                android:id="@+id/home_my_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_my_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dime_8dp"
+                android:layout_marginTop="@dimen/dime_2dp"
+                android:text="@string/home_my" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

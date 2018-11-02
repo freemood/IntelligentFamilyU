@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_title_text" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dime_120dp"
+            android:background="@mipmap/bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dime_16dp"
+                android:layout_marginTop="@dimen/dime_32dp"
+                android:layout_marginEnd="@dimen/dime_16dp"
+                android:layout_marginBottom="@dimen/dime_16dp"
+                android:background="@drawable/shape_home_sence"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginTop="@dimen/dime_20dp"
+                    android:layout_marginEnd="@dimen/dime_32dp">
+
+                    <TextView
+                        android:id="@+id/mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_scence_metal_switch"
+                        android:textColor="@color/home_black"
+                        android:textSize="@dimen/dime_25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mini"
+                        android:layout_marginTop="@dimen/dime_8dp"
+                        android:text="@string/home_scence_socket_room_use"
+                        android:textColor="@color/home_grgray_1"
+                        android:textSize="@dimen/dime_13sp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_32dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:background="@mipmap/metal_switch" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_power_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dime_16dp"
+                android:layout_marginEnd="@dimen/dime_16dp"
+                android:background="@drawable/banner_shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/my_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_16dp"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:text="设备"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dime_16sp" />
+
+                <TextView
+                    android:id="@+id/my_metal_isopen"
+                    android:layout_toEndOf="@+id/my_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_8dp"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:text="开启"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dime_16sp" />
+
+
+                <com.Intelligent.FamilyU.view.SwitchView
+                    android:id="@+id/switch_sclete"
+                    android:layout_width="@dimen/dime_32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

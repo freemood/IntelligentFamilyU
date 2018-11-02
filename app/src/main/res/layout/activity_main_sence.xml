@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 顶部导航栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime_42dp"
+        android:background="@mipmap/black_title"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/device_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/manual_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/home_scene_manual"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dime_16sp" />
+            <!-- Tab底部下划线 -->
+            <ImageView
+                android:id="@+id/iv_tab_bottom_img1"
+                android:layout_width="@dimen/dime_60dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dime_32dp"
+                android:layout_marginRight="@dimen/dime_32dp"
+                android:src="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/system_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/automatic_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/home_scene_automatic"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dime_16sp" />
+
+            <ImageView
+                android:id="@+id/iv_tab_bottom_img2"
+                android:layout_width="@dimen/dime_60dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dime_32dp"
+                android:layout_marginRight="@dimen/dime_32dp"
+                android:src="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.Intelligent.FamilyU.view.CustomViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#ffffff" />
+
+</LinearLayout>

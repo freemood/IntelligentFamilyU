@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/map"
+    style="@style/MatchMatch">
+
+    <cn.bingoogolapple.qrcode.zbar.ZBarView
+        android:id="@+id/zbarview"
+        style="@style/MatchMatch"
+        app:qrcv_animTime="1000"
+        app:qrcv_barCodeTipText="@string/add_device_zxing_jieshao1"
+        app:qrcv_barcodeRectHeight="120dp"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/colorPrimaryDark"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_customGridScanLineDrawable="@mipmap/custom_grid_scan_line"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="false"
+        app:qrcv_isShowDefaultGridScanLineDrawable="true"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowLocationPoint="false"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="false"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_qrCodeTipText="@string/add_device_zxing_jieshao2"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="@color/colorPrimaryDark"
+        app:qrcv_toolbarHeight="16dp"
+        app:qrcv_topOffset="80dp"
+        app:qrcv_verticalBias="-1" />
+
+    <RelativeLayout
+        android:id="@+id/choose_qrcde_from_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dime_32dp">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/dlna_pic_1" />
+
+        <TextView
+            style="@style/WrapWrapTv"
+            android:layout_below="@+id/pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dime_8dp"
+            android:text="@string/add_device_zxing_photo" />
+    </RelativeLayout>
+</RelativeLayout>

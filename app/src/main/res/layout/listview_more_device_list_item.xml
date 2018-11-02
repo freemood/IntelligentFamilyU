@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.Intelligent.FamilyU.view.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dime_8dp"
+        android:layout_marginTop="@dimen/dime_8dp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dime_16dp"
+            android:layout_marginRight="@dimen/dime_16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dime_16dp"
+                android:src="@mipmap/ih_player_control_folder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_16sp" />
+
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/home_grgray_2"
+                    android:textSize="@dimen/dime_16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/dime_16dp"
+                android:layout_marginRight="@dimen/dime_16dp"
+                android:textColor="@color/home_black"
+                android:textSize="@dimen/dime_16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="@dimen/dime_100dp"
+            android:layout_height="match_parent"
+            android:background="@color/viewfinder_laser"
+            android:text="@string/btn_untie"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dime_16sp" />
+
+    </LinearLayout>
+</com.Intelligent.FamilyU.view.SwipeItemLayout>
+

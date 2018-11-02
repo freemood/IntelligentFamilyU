@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/back_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dime_120dp"
+            android:background="@mipmap/bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dime_16dp"
+            android:layout_marginStart="@dimen/dime_16dp"
+            android:layout_marginTop="@dimen/dime_32dp"
+
+            android:background="@drawable/banner_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dime_32dp"
+                android:text="@string/home_add_gateway_3_3"
+                android:textColor="@color/home_black"
+                android:textSize="@dimen/dime_35sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dime_32dp"
+                android:src="@mipmap/gateway_big" />
+
+            <TextView
+                android:id="@+id/gateway_three_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/time"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:text="@string/home_add_gateway_three_title"
+                android:textColor="@color/home_black"
+                android:textSize="@dimen/dime_16sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dime_32dp"
+                android:layout_marginTop="@dimen/dime_8dp"
+                android:text="59s"
+                android:textColor="@color/home_black"
+                android:textSize="@dimen/dime_20sp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dime_32dp"
+        android:layout_marginLeft="@dimen/dime_16dp"
+        android:layout_marginRight="@dimen/dime_16dp"
+        android:layout_marginTop="@dimen/dime_32dp"
+        android:background="@drawable/btn_shape"
+        android:minWidth="@dimen/dime_240dp"
+        android:text="@string/home_add_gateway_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dime_16sp" />
+</LinearLayout>

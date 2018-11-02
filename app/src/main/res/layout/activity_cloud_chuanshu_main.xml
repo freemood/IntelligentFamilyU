@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <!-- 顶部导航栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime_42dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+       >
+
+        <LinearLayout
+            android:id="@+id/starting_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/starting_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/home_cloud_download_list"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dime_16sp" />
+            <!-- Tab底部下划线 -->
+            <ImageView
+                android:id="@+id/iv_tab_bottom_img1"
+                android:layout_width="@dimen/dime_60dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dime_32dp"
+                android:layout_marginRight="@dimen/dime_32dp"
+                android:src="@color/home_main" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/download_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/download_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/home_cloud_upload_list"
+                android:textColor="@color/home_grgray_1"
+                android:textSize="@dimen/dime_16sp" />
+
+            <ImageView
+                android:id="@+id/iv_tab_bottom_img2"
+                android:layout_width="@dimen/dime_60dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dime_32dp"
+                android:layout_marginRight="@dimen/dime_32dp"
+                android:src="@color/home_main" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/delete_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/home_remote_delete"
+                android:textColor="@color/home_grgray_1"
+                android:textSize="@dimen/dime_16sp" />
+
+            <ImageView
+                android:id="@+id/iv_tab_bottom_img3"
+                android:layout_width="@dimen/dime_60dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dime_32dp"
+                android:layout_marginRight="@dimen/dime_32dp"
+                android:src="@color/home_main" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.Intelligent.FamilyU.view.CustomViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#ffffff" />
+
+</LinearLayout>

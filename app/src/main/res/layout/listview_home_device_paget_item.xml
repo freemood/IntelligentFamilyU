@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:minHeight="@dimen/dime_100dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dime_4dp"
+            android:src="@mipmap/gateway_page" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dime_5dp">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dime_8dp"
+                android:singleLine="true"
+                android:textColor="@color/home_black"
+                android:textSize="@dimen/dime_16sp" />
+
+            <ImageView
+                android:id="@+id/is_starting_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dime_8dp"
+                android:background="@mipmap/red_off"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="@dimen/dime_0_5dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/dime_8dp"
+        android:background="@color/home_line_2" />
+</LinearLayout>
+
+

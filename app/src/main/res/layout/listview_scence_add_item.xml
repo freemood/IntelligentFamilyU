@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="@dimen/dime_42dp"
+            android:layout_height="@dimen/dime_42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dime_4dp"
+            android:src="@mipmap/scence_socket" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dime_16dp">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:textColor="@color/home_black"
+                android:textSize="@dimen/dime_16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime_0_5dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/dime_8dp"
+        android:background="@color/home_line_1" />
+</LinearLayout>
+
+

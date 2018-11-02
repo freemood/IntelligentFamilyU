@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_title_text" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dime_120dp"
+            android:background="@mipmap/bg" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginBottom="@dimen/dime_16dp"
+        android:layout_marginEnd="@dimen/dime_16dp"
+        android:layout_marginStart="@dimen/dime_16dp"
+        android:layout_marginTop="@dimen/dime_32dp"
+        android:background="@drawable/shape_home_sence"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dime_32dp"
+                android:layout_marginStart="@dimen/dime_32dp"
+                android:layout_marginTop="@dimen/dime_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_my_gateway_device"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_25sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/wifixhdpi" />
+
+                    <TextView
+                        android:id="@+id/network_state_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dime_8dp"
+                        android:text="@string/home_gateway_detail_title_nomal"
+                        android:textColor="@color/home_grgray_1"
+                        android:textSize="@dimen/dime_13sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dime_32dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:text="@string/home_gateway_detail_room"
+                android:textColor="@color/home_main"
+                android:textSize="@dimen/dime_16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="@dimen/dime_32dp"
+                android:layout_marginStart="@dimen/dime_32dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@mipmap/gateway_big" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dime_32dp"
+                android:layout_marginStart="@dimen/dime_32dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_gateway_detail_guanlian_device"
+                        android:textColor="@color/home_grgray_1"
+                        android:textSize="@dimen/dime_20sp" />
+
+                    <TextView
+                        android:id="@+id/my_black_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/home_my_black"
+                        android:textColor="@color/home_main"
+                        android:textSize="@dimen/dime_16sp"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/my_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/my_black_tv"
+                        android:layout_marginTop="@dimen/dime_16dp"
+                        android:scrollbars="none" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_plugin_install_title"
+                        android:textColor="@color/home_grgray_1"
+                        android:textSize="@dimen/dime_20sp" />
+
+                    <TextView
+                        android:id="@+id/my_black_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/home_my_black"
+                        android:textColor="@color/home_main"
+                        android:textSize="@dimen/dime_16sp"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/my_recycler_plugin_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/my_black_tv2"
+                        android:layout_marginTop="@dimen/dime_16dp"
+                        android:scrollbars="none" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/restart_ll"
+        android:layout_width="@dimen/dime_140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/dime_32dp"
+        android:background="@drawable/btn_shape"
+        android:paddingBottom="@dimen/dime_8dp"
+        android:paddingEnd="@dimen/dime_16dp"
+        android:paddingStart="@dimen/dime_16dp"
+        android:paddingTop="@dimen/dime_8dp"
+        android:text="@string/home_gateway_detail_restart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dime_16sp" />
+
+</LinearLayout>

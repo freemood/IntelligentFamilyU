@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_phone_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dime_16dp"
+        android:layout_marginStart="@dimen/dime_16dp"
+        android:layout_marginTop="@dimen/dime_32dp"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/et_verification"
+            android:padding="@dimen/dime_12dp"
+            android:text="@string/home_phone_86"
+            android:textColor="@color/home_grgray_1" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dime_1dp"
+            android:background="@color/transparent"
+            android:hint="@string/home_phone_please"
+            android:inputType="number"
+            android:padding="@dimen/dime_12dp"
+            android:singleLine="true"
+            android:textColor="@color/home_grgray_1"
+            android:textColorHint="@color/home_line_1"
+            android:textSize="@dimen/dime_16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime_0_5dp"
+        android:layout_marginLeft="@dimen/dime_16dp"
+        android:layout_marginRight="@dimen/dime_16dp"
+        android:layout_marginTop="@dimen/dime_1dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dime_16dp"
+        android:layout_marginStart="@dimen/dime_16dp"
+        android:layout_marginTop="@dimen/dime_32dp"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dime_16dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="@string/home_please_verification_code"
+            android:inputType="number"
+            android:padding="@dimen/dime_12dp"
+            android:singleLine="true"
+            android:textColor="@color/home_grgray_1"
+            android:textColorHint="@color/home_line_1"
+            android:textSize="@dimen/dime_16sp" />
+
+        <TextView
+            android:id="@+id/verification_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/et_verification"
+            android:padding="@dimen/dime_12dp"
+            android:text="@string/home_get_verification_code"
+            android:textColor="@color/home_main" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime_0_5dp"
+        android:layout_marginLeft="@dimen/dime_16dp"
+        android:layout_marginRight="@dimen/dime_16dp"
+        android:layout_marginTop="@dimen/dime_1dp"
+        android:background="@color/home_grgray_1" />
+</LinearLayout>

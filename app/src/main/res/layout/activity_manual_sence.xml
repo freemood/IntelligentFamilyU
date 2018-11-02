@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/home_sence_3"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dime_120dp"
+            android:background="@mipmap/bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dime_16dp"
+            android:layout_marginTop="@dimen/dime_32dp"
+            android:layout_marginRight="@dimen/dime_16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/scene_sleep_pattern_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_home_sence">
+
+                <ImageView
+                    android:id="@+id/sleep_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:src="@mipmap/sleep" />
+
+                <TextView
+                    android:id="@+id/scene_sleep_pattern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_8dp"
+                    android:layout_toEndOf="@+id/sleep_iv"
+                    android:text="@string/home_scene_sleep_pattern"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_20sp" />
+
+                <TextView
+                    android:id="@+id/scene_sleep_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scene_sleep_pattern"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_toEndOf="@+id/sleep_iv"
+                    android:text="@string/home_scene_no_device"
+                    android:textColor="@color/home_grgray_2"
+                    android:textSize="@dimen/dime_13sp" />
+
+
+                <TextView
+                    android:id="@+id/scene_sleep_number_shoudong_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_toStartOf="@+id/scene_sleep_number_shoudong_iv"
+                    android:text="@string/home_scene_shoudong_device"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_13sp" />
+
+                <ImageView
+                    android:id="@+id/scene_sleep_number_shoudong_iv"
+                    android:layout_width="@dimen/dime_16dp"
+                    android:layout_height="@dimen/dime_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:src="@mipmap/arrow_right_pressed" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scene_getup_pattern_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@drawable/shape_home_sence">
+
+                <ImageView
+                    android:id="@+id/getup_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:src="@mipmap/getup" />
+
+                <TextView
+                    android:id="@+id/scene_getup_pattern_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_8dp"
+                    android:layout_toEndOf="@+id/getup_iv"
+                    android:text="@string/home_scene_getup_pattern"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_20sp" />
+
+                <TextView
+                    android:id="@+id/scene_getup_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scene_getup_pattern_tv"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_toEndOf="@+id/getup_iv"
+                    android:text="@string/home_scene_no_device"
+                    android:textColor="@color/home_grgray_2"
+                    android:textSize="@dimen/dime_13sp" />
+
+                <TextView
+                    android:id="@+id/scene_getup_number_shoudong_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_toStartOf="@+id/scene_getup_number_shoudong_iv"
+                    android:text="@string/home_scene_shoudong_device"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_13sp" />
+
+                <ImageView
+                    android:id="@+id/scene_getup_number_shoudong_iv"
+                    android:layout_width="@dimen/dime_16dp"
+                    android:layout_height="@dimen/dime_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:src="@mipmap/arrow_right_pressed" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/scene_gethome_pattern_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@drawable/shape_home_sence">
+
+                <ImageView
+                    android:id="@+id/gethome_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:src="@mipmap/gethome" />
+
+                <TextView
+                    android:id="@+id/scene_gethome_pattern_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_8dp"
+                    android:layout_toEndOf="@+id/gethome_iv"
+                    android:text="@string/home_scene_gethome_pattern"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_20sp" />
+
+                <TextView
+                    android:id="@+id/scene_gethome_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scene_gethome_pattern_tv"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_toEndOf="@+id/gethome_iv"
+                    android:text="@string/home_scene_no_device"
+                    android:textColor="@color/home_grgray_2"
+                    android:textSize="@dimen/dime_13sp" />
+
+                <TextView
+                    android:id="@+id/scene_gethome_number_shoudong_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_toStartOf="@+id/scene_gethome_number_shoudong_iv"
+                    android:text="@string/home_scene_shoudong_device"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_13sp" />
+
+                <ImageView
+                    android:id="@+id/scene_gethome_number_shoudong_iv"
+                    android:layout_width="@dimen/dime_16dp"
+                    android:layout_height="@dimen/dime_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:src="@mipmap/arrow_right_pressed" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/scene_awayhome_pattern_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:background="@drawable/shape_home_sence">
+
+                <ImageView
+                    android:id="@+id/awayhome_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:src="@mipmap/awayhome" />
+
+                <TextView
+                    android:id="@+id/scene_awayhome_pattern_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_8dp"
+                    android:layout_toEndOf="@+id/awayhome_iv"
+                    android:text="@string/home_scene_awayhome_pattern"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_20sp" />
+
+                <TextView
+                    android:id="@+id/scene_awayhome_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scene_awayhome_pattern_tv"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_toEndOf="@+id/awayhome_iv"
+                    android:text="@string/home_scene_no_device"
+                    android:textColor="@color/home_grgray_2"
+                    android:textSize="@dimen/dime_13sp" />
+
+                <TextView
+                    android:id="@+id/scene_awayhome_number_shoudong_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dime_32dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:layout_toStartOf="@+id/scene_awayhome_number_shoudong_iv"
+                    android:text="@string/home_scene_shoudong_device"
+                    android:textColor="@color/home_black"
+                    android:textSize="@dimen/dime_13sp" />
+                <ImageView
+                    android:id="@+id/scene_awayhome_number_shoudong_iv"
+                    android:layout_width="@dimen/dime_16dp"
+                    android:layout_height="@dimen/dime_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:src="@mipmap/arrow_right_pressed" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

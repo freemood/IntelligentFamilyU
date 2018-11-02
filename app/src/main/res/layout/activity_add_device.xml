@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/back_title" />
+
+    <com.Intelligent.FamilyU.view.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/add_device_zxing_bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dime_16dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:text="@string/add_device_zxing"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dime_20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_device_model_bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dime_16dp"
+                android:layout_marginTop="@dimen/dime_16dp"
+                android:text="@string/add_device_version"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dime_20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

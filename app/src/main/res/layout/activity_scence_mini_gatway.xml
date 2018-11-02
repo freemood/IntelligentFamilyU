@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_title_text" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dime_120dp"
+            android:background="@mipmap/bg" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_16dp"
+                    android:layout_marginTop="@dimen/dime_32dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:layout_marginBottom="@dimen/dime_16dp"
+                    android:background="@drawable/shape_home_sence"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime_32dp"
+                        android:layout_marginTop="@dimen/dime_20dp"
+                        android:layout_marginEnd="@dimen/dime_32dp">
+
+                        <TextView
+                            android:id="@+id/mini"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_scence_mini_gatway"
+                            android:textColor="@color/home_black"
+                            android:textSize="@dimen/dime_25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mini"
+                            android:layout_marginTop="@dimen/dime_8dp"
+                            android:text="@string/home_scence_socket_room_use"
+                            android:textColor="@color/home_grgray_1"
+                            android:textSize="@dimen/dime_13sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/wifixhdpi" />
+
+                            <TextView
+                                android:id="@+id/network_state_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dime_8dp"
+                                android:text="@string/home_gateway_detail_title_nomal"
+                                android:textColor="@color/home_grgray_1"
+                                android:textSize="@dimen/dime_13sp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/dime_32dp"
+                        android:layout_marginTop="@dimen/dime_16dp"
+                        android:layout_marginEnd="@dimen/dime_32dp"
+                        android:layout_marginBottom="@dimen/dime_16dp"
+                        android:background="@mipmap/gateway_big" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_power_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:background="@drawable/banner_shape"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/my_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:layout_marginTop="@dimen/dime_16dp"
+                        android:layout_marginBottom="@dimen/dime_16dp"
+                        android:text="@string/home_scence_mini_gatway_title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dime_16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dime_0_5dp"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:layout_marginEnd="@dimen/dime_16dp"
+                        android:background="@color/home_line_2" />
+
+                    <RelativeLayout
+                        android:id="@+id/dengguang_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:layout_marginEnd="@dimen/dime_16dp">
+
+                        <TextView
+                            android:id="@+id/dengguang_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dime_16dp"
+                            android:layout_marginBottom="@dimen/dime_16dp"
+                            android:text="灯光颜色"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dime_13sp" />
+
+
+                        <TextView
+                            android:id="@+id/color_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dime_16dp"
+                            android:layout_marginBottom="@dimen/dime_16dp"
+                            android:layout_toStartOf="@+id/color_end"
+                            android:text="红色"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dime_13sp" />
+
+
+                        <ImageView
+                            android:id="@+id/color_end"
+                            android:layout_width="@dimen/dime_16dp"
+                            android:layout_height="@dimen/dime_16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dime_5dp"
+                            android:layout_marginEnd="@dimen/dime_16dp"
+                            android:src="@mipmap/arrow_right_normal" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/liangdu_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:layout_marginEnd="@dimen/dime_16dp">
+
+                        <TextView
+                            android:id="@+id/liangdu_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dime_16dp"
+                            android:layout_marginBottom="@dimen/dime_16dp"
+                            android:text="灯光亮度"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dime_13sp" />
+
+
+                        <TextView
+                            android:id="@+id/ld_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dime_16dp"
+                            android:layout_marginBottom="@dimen/dime_16dp"
+                            android:layout_toStartOf="@+id/ld_end"
+                            android:text="50%"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dime_13sp" />
+
+
+                        <ImageView
+                            android:id="@+id/ld_end"
+                            android:layout_width="@dimen/dime_16dp"
+                            android:layout_height="@dimen/dime_16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dime_5dp"
+                            android:layout_marginEnd="@dimen/dime_16dp"
+                            android:src="@mipmap/arrow_right_normal" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/my_black_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dime_16dp"
+                    android:layout_marginTop="@dimen/dime_16dp"
+                    android:layout_marginEnd="@dimen/dime_16dp"
+                    android:background="@drawable/banner_shape"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:layout_marginTop="@dimen/dime_16dp"
+                        android:layout_marginBottom="@dimen/dime_16dp"
+                        android:text="@string/home_scence_mini_gatway_voice_title"
+                        android:textColor="@color/home_black"
+                        android:textSize="@dimen/dime_16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dime_0_5dp"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:layout_marginEnd="@dimen/dime_16dp"
+                        android:background="@color/home_line_2" />
+
+                    <RelativeLayout
+                        android:id="@+id/vol_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:layout_marginEnd="@dimen/dime_16dp">
+
+                        <TextView
+                            android:id="@+id/vol_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dime_16dp"
+                            android:layout_marginBottom="@dimen/dime_16dp"
+                            android:text="声音设置"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dime_13sp" />
+
+
+                        <TextView
+                            android:id="@+id/vol_name_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dime_16dp"
+                            android:layout_marginBottom="@dimen/dime_16dp"
+                            android:layout_toStartOf="@+id/vol_end"
+                            android:text="童音"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dime_13sp" />
+
+
+                        <ImageView
+                            android:id="@+id/vol_end"
+                            android:layout_width="@dimen/dime_16dp"
+                            android:layout_height="@dimen/dime_16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dime_5dp"
+                            android:layout_marginEnd="@dimen/dime_16dp"
+                            android:src="@mipmap/arrow_right_normal" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/vol_big_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dime_16dp"
+                        android:layout_marginEnd="@dimen/dime_16dp">
+
+                        <TextView
+                            android:id="@+id/vol_big_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dime_16dp"
+                            android:layout_marginBottom="@dimen/dime_16dp"
+                            android:text="音量设置"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dime_13sp" />
+
+
+                        <TextView
+                            android:id="@+id/vol_big_fen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dime_16dp"
+                            android:layout_marginBottom="@dimen/dime_16dp"
+                            android:layout_toStartOf="@+id/vol_big_end"
+                            android:text="50%"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dime_13sp" />
+
+
+                        <ImageView
+                            android:id="@+id/vol_big_end"
+                            android:layout_width="@dimen/dime_16dp"
+                            android:layout_height="@dimen/dime_16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dime_5dp"
+                            android:layout_marginEnd="@dimen/dime_16dp"
+                            android:src="@mipmap/arrow_right_normal" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+</LinearLayout>

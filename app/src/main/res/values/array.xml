@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="device_name">
+        <item>视频监控</item>
+        <item>空气质量调节</item>
+        <item>热水器</item>
+        <item>光线调节</item>
+        <item>扫地机器人</item>
+        <item>智能开关</item>
+        <item>智能插座</item>
+        <item>机器手</item>
+        <item>环境监控</item>
+        <item>智能安防</item>
+        <item>定位器</item>
+        <item>智能门锁</item>
+    </string-array>
+
+    <string-array name="pm_value">
+        <item>优</item>
+        <item>良</item>
+        <item>轻度</item>
+        <item>中度</item>
+        <item>重度</item>
+        <item>严重</item>
+    </string-array>
+
+    <string-array name="spnner_value">
+        <item>GATEWAY</item>
+        <item>NETWORKING</item>
+        <item>HOME</item>
+        <item>PLUGINS</item>
+        <item>SHOP</item>
+        <item>OTHER</item>
+    </string-array>
+
+    <string-array name="data_value">
+        <item>网关设备</item>
+        <item>组网设备</item>
+        <item>家居设备</item>
+        <item>插件设备</item>
+        <item>商城问题</item>
+        <item>其他问题</item>
+    </string-array>
+</resources>
