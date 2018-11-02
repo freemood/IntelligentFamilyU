@@ -248,6 +248,7 @@ public class MainActivity extends BaseFragmentActivity {
         homeMyTv.setTextColor(getResources().getColor(R.color.home_grgray_1));
 
         initBauDuMap();
+
     }
 
     private void initJPush() {
@@ -418,12 +419,14 @@ public class MainActivity extends BaseFragmentActivity {
                 Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.ACCESS_FINE_LOCATION,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.READ_PHONE_STATE};
+                Manifest.permission.READ_PHONE_STATE,
+                Manifest.permission.CAMERA,};
         String[] permsStr = {
                 getResources().getString(R.string.home_baidu_location),
                 getResources().getString(R.string.home_baidu_file_location),
                 getResources().getString(R.string.home_baidu_sdcard),
-                getResources().getString(R.string.home_baidu_phoone_state)};
+                getResources().getString(R.string.home_baidu_phoone_state),
+                getResources().getString(R.string.home_baidu_canmer_state)};
         int length = perms.length;
         for (int i = 0; i < length; i++) {
             if (!EasyPermissions.hasPermissions(mContext, perms)) {
@@ -599,6 +602,7 @@ public class MainActivity extends BaseFragmentActivity {
             // ExampleUtil.showToast(logs, mContext.getApplicationContext());
         }
     };
+
 
     public void setIAddGetawary(IAddGetawary iAddGetawary) {
         mIAddGetawary = iAddGetawary;

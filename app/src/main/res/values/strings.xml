@@ -125,6 +125,7 @@
     <string name="home_baidu_file_location">获取当前服务区代码</string>
     <string name="home_baidu_sdcard">获取sd卡获得写的权限</string>
     <string name="home_baidu_phoone_state">获取手机读写码权限</string>
+    <string name="home_baidu_canmer_state">获取相机权限</string>
 
     <string name="home_user_list">用户列表</string>
     <string name="home_user_name">用户</string>
