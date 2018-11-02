@@ -144,23 +144,38 @@ public class ScenceCustomDeviceListActivity extends BaseFragmentActivity impleme
         List<DeviceOperation> list = bean.getList();
 
         int size = list.size();
+        boolean isOpen = false;
         for (int i = 0; i < size; i++) {
+            if(isOpen){
+                EventBus.getDefault().postSticky(deviceScenceItem);
+                finish();
+                return;
+            }
             DeviceOperation mDeviceOperation = list.get(i);
             String name = mDeviceOperation.getName();
-            if (name.contains("电源")||name.contains("状态")) {
+            if (!name.contains("状态") && !name.contains("灯光")) {
+                continue;
+            }
+
+            List<DeviceOperation.OperationValueList> operationValueList = mDeviceOperation.getOperationValueList();
+            int opnSize = operationValueList.size();
+            if (opnSize > 0) {
                 //deviceScenceItem.setName(name);
                 deviceScenceItem.setCode(mDeviceOperation.getCode());
-                List<DeviceOperation.OperationValueList> operationValueList = mDeviceOperation.getOperationValueList();
                 int opSize = operationValueList.size();
                 for (int j = 0; j < opSize; j++) {
+                    if (j >= 2) {
+                        isOpen = true;
+                        continue;
+                    }
                     DeviceOperation.OperationValueList ls = operationValueList.get(j);
                     String opname = ls.getName();
                     deviceScenceItem.setParamIndex(name);
-                    if (opname.contains("开")) {
+                    if (j == 0) {
                         deviceScenceItem.setParamOpenCode(ls.getCode());
                         deviceScenceItem.setParamOpenValue(ls.getValue());
                         deviceScenceItem.setParamOpenName(opname);
-                    }else{
+                    } else if (j == 1) {
                         deviceScenceItem.setParamCloseCode(ls.getCode());
                         deviceScenceItem.setParamCloseValue(ls.getValue());
                         deviceScenceItem.setParamCloseName(opname);

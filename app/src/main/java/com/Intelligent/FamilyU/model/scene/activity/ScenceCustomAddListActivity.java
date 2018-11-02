@@ -213,7 +213,7 @@ public class ScenceCustomAddListActivity extends BaseFragmentActivity implements
             sceneExecCondition.setCriterion("eq");
             sceneExecCondition.setDataType(deviceScenceItem.getDeviceType());
             sceneExecCondition.setDeviceMac(deviceScenceItem.getChildDeviceMac());
-            sceneExecCondition.setParamCode("source_switch");
+            sceneExecCondition.setParamCode(deviceScenceItem.getCode());
             sceneExecCondition.setParamIndex(deviceScenceItem.getName());
             sceneExecCondition.setParamValue("open");
             sceneExecCondition.setResource("device");
